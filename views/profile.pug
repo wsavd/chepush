@@ -1,0 +1,7 @@
+extends layout.pug
+block content
+    a(href='/logout') Выйти
+    div#id= user._id
+    div#email= user.local.email
+    div#password= user.local.password
+       
