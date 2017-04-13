@@ -23,10 +23,13 @@ $(document).ready(function  () {
                     })
                 },*/
                 success: function(result) {
-                    var parsed0 = result[0].title,
-                        parsed1 = result[1].title
-                console.log(parsed0);
-                console.log(parsed1);
+                    $.each(result, function(index){
+                            console.log(result[index].title)
+                    })
+                    //var parsed0 = result[0].title,
+                      //  parsed1 = result[1].title
+                //console.log(parsed0);
+                //console.log(parsed1);
                 //$.each(parsed, function(key, value){
                    // console.log(key);
                     //console.log(key);
