@@ -1,7 +1,17 @@
 extends layout.pug
 block content
-    a(href='/logout') Выйти
-    div#id= user._id
-    div#email= user.local.email
-    div#password= user.local.password
+    //.header
+        .menu-left left
+        .menu-right
+            .account= user.local.email
+            a(href='/logout') Выйти
+    button#boards Доски
+    #journalLogs
+
+    
+    //div#id= user._id
+    //div#email= user.local.email
+    //div#password= user.local.password
+
+    
        
